@@ -1,0 +1,9 @@
+body { font: 16px/1.5 system-ui, sans-serif; padding: 32px; color: #172033; background: white; }
+button, input { font: inherit; padding: 8px 12px; margin: 4px; }
+:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 16px; background: #f1f5f9; max-width: 900px; }
+[data-part="content"] { padding: 16px; border: 1px solid #64748b; background: white; min-width: 160px; }
+[data-part="item"] { padding: 8px; }
+[data-highlighted] { background: #dbeafe; }
+[data-scope="navigation-menu"][data-part="list"] { display: flex; list-style: none; padding: 0; }
+[data-scope="navigation-menu"][data-part="viewport"] { background: white; border: 1px solid #64748b; }

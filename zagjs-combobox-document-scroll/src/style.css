@@ -1,0 +1,5 @@
+body { margin: 0; padding: 24px; font: 16px/1.5 system-ui, sans-serif; }
+main { max-width: 720px; }
+output { position: fixed; top: 12px; right: 12px; padding: 8px 12px; background: #172033; color: white; }
+[data-part="content"] { width: 280px; border: 1px solid #64748b; }
+[data-highlighted] { background: #dbeafe; }
