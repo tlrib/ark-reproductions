@@ -4,10 +4,10 @@ Standalone React projects using Ark UI primitives directly. Each folder reproduc
 
 | Reproduction | Source | Run in browser |
 | --- | --- | --- |
-| Disabled Collapsible trigger lacks disabled semantics | [Source](zagjs-collapsible-disabled/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-collapsible-disabled) |
-| Keyboard-opened Context Menu loses focus after Escape | [Source](zagjs-context-menu-escape-focus/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-context-menu-escape-focus) |
-| Navigation Menu proxy fails axe `aria-hidden-focus` | [Source](zagjs-navigation-menu-hidden-proxy/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-navigation-menu-hidden-proxy) |
-| Initially highlighted Combobox item scrolls the document | [Source](zagjs-combobox-document-scroll/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-combobox-document-scroll) |
+| [Disabled Collapsible trigger lacks disabled semantics](https://github.com/chakra-ui/zag/issues/3564) | [Source](zagjs-collapsible-disabled/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-collapsible-disabled) |
+| [Keyboard-opened Context Menu loses focus after Escape](https://github.com/chakra-ui/zag/issues/3565) | [Source](zagjs-context-menu-escape-focus/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-context-menu-escape-focus) |
+| [Navigation Menu proxy fails axe `aria-hidden-focus`](https://github.com/chakra-ui/zag/issues/3566) | [Source](zagjs-navigation-menu-hidden-proxy/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-navigation-menu-hidden-proxy) |
+| [Initially highlighted Combobox item scrolls the document](https://github.com/chakra-ui/zag/issues/3567) | [Source](zagjs-combobox-document-scroll/) | [StackBlitz](https://stackblitz.com/github/tlrib/ark-reproductions/tree/main/zagjs-combobox-document-scroll) |
 
 ## Run locally
 
@@ -59,4 +59,4 @@ Projects pin Ark UI React 5.39.3 and React 19.3.1. Each overrides its affected Z
 
 Vite 7.3.7 avoids the Vite 8 native Rolldown binding used by newer versions, which did not run in the WebContainer used to prepare these examples. Each project includes its own Bun lockfile; no local path dependencies are required.
 
-These examples document observed behavior; they do not imply that an upstream issue has been filed or accepted.
+The reproduction titles above link to their upstream bug reports.
