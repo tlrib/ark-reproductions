@@ -26,7 +26,7 @@ Substitute any other folder name to run that reproduction. StackBlitz installs d
 
 1. Click **Before**, then press Tab.
 2. **Details** receives focus despite the root being disabled.
-3. Press **Alt+A** to inspect the trigger markup without changing focus.
+3. The readout automatically shows the missing disabled attributes.
 
 Expected: the trigger exposes disabled semantics. Actual: it has `data-disabled` but neither `disabled` nor `aria-disabled`, and remains tabbable.
 
@@ -34,16 +34,16 @@ Expected: the trigger exposes disabled semantics. Actual: it has `data-disabled`
 
 1. Press Tab to focus **Open context menu**.
 2. Press **Shift+F10** and wait for focus to enter the menu.
-3. Press **Escape**, then **Alt+A** to inspect focus.
+3. Press **Escape**. The live **Current focus** readout changes from **Menu** to **Page body (no control focused)**.
 
 Expected: focus returns to the context trigger. Actual: the menu closes and focus ends on the document body.
 
 ### Navigation Menu proxy
 
 1. Click **Item One**.
-2. Press **Alt+A** to inspect the trigger proxy and run the axe `aria-hidden-focus` rule.
+2. The readout automatically checks the invisible focus helper and runs the axe `aria-hidden-focus` rule.
 
-Expected: no `aria-hidden-focus` violation. Actual: the proxy combines `aria-hidden="true"` with `tabindex="0"` and fails the rule.
+Expected: an element hidden from screen readers is not a keyboard focus target. Actual: the invisible focus helper combines `aria-hidden="true"` with `tabindex="0"`, stays in the Tab order, and fails axe `aria-hidden-focus`.
 
 ### Combobox document scroll
 

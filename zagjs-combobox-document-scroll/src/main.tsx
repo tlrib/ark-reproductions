@@ -6,7 +6,7 @@ createRoot(document.getElementById('root')!).render(<App />)
 
 const updatePosition = () => {
   const output = document.getElementById('scroll-position')
-  if (output) output.textContent = `window.scrollY: ${window.scrollY}`
+  if (output) output.textContent = `Expected: page stays at the top (0)\nActual scroll position: ${window.scrollY}`
 }
 window.addEventListener('scroll', updatePosition, { passive: true })
 requestAnimationFrame(updatePosition)
